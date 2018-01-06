@@ -15,5 +15,5 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->post('/3des', 'CryptoController@encrypt_3DES');
-$router->post('/des3', 'CryptoController@decrypt_3DES');
+$router->post('/encrypt_3des', 'CryptoController@encrypt_3DES');
+$router->post('/decrypt_3des', 'CryptoController@decrypt_3DES');

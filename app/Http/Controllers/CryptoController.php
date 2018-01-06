@@ -16,7 +16,7 @@ class CryptoController extends Controller
         $raw = $request->input('raw');
 
         if ($raw) {
-            return response($this->_3DES->encrypt($raw), 200);
+            return response()->json(["data" => $this->_3DES->encrypt($raw)], 200);
         }
         
         return response("You need to provide a data to be encrypted in the shape {raw: 'dataToBeEncrypted'}", 400);
@@ -26,7 +26,7 @@ class CryptoController extends Controller
         $encrypted = $request->input('encrypted');
 
         if ($encrypted) {
-            return response($this->_3DES->decrypt($encrypted), 200);
+            return response(["data" => $this->_3DES->decrypt($encrypted)], 200);
         }
         
         return response("You need to provide a data to be decrypted in the shape {encrypted: 'dataToBeDecrypted'}", 400);

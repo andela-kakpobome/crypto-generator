@@ -16,6 +16,9 @@ Quick utility to encrypt/decrypt entities. Only works for 3DES atm.
 - Start the server here, you can use the internal Php server. The following command starts the server on port 8080:
   `php -S :8080`
 	
+## Live URL
+
+The API is hosted here: `https://crypto-generator.herokuapp.com`
 
 ## Endpoints
 

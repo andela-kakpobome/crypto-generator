@@ -18,7 +18,7 @@ Quick utility to encrypt/decrypt entities. Only works for 3DES atm.
 	
 ## Live URL
 
-The API is hosted here: `https://crypto-generator.herokuapp.com`
+The API is hosted [here](https://crypto-generator.herokuapp.com)
 
 ## Endpoints
 
